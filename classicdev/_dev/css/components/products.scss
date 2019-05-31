@@ -74,6 +74,7 @@
     }
   }
 }
+
 .product-quantity {
   display: flex;
   .qty, .add {
@@ -84,6 +85,7 @@
   .qty {
     margin-right: 0.4rem;
   }
+  
   #quantity_wanted {
     color: $gray-darker;
     background-color: white;
