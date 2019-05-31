@@ -27,7 +27,15 @@
 @import "components/errors";
 @import "components/customization-modal";
 @import "components/sitemap";
+
+/** perso **/
+
+.pastille-img{
+  width: 225px;
+  
+}
 /*** HEADER ***/
+
 #header {
   background: white;
   color: $gray;

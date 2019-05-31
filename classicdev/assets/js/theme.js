@@ -909,7 +909,7 @@ $(document).ready(function () {
 /* 6 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n}\r\n^\r\n      Invalid CSS after \"}\": expected \"}\", was \"\"\r\n      in D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\css\\theme.scss (line 416, column 1)\n    at D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\node_modules\\webpack\\lib\\NormalModule.js:192:19\n    at D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.callback (D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.<anonymous> (D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\node_modules\\async\\dist\\async.js:2244:31)\n    at Object.callback (D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\node_modules\\async\\dist\\async.js:906:16)\n    at options.error (D:\\Program\\wamp\\www\\nouvelleLiterie\\PrestaShop\\themes\\classicdev\\_dev\\node_modules\\node-sass\\lib\\index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 7 */
@@ -6409,4 +6409,71 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4
         shift = shift.split(' ');
         shift[1] = shift[1] || shift[0];
 
-        var _shi
+        var _shift = shift;
+
+        var _shift2 = _slicedToArray(_shift, 2);
+
+        shiftTop = _shift2[0];
+        shiftLeft = _shift2[1];
+
+        shiftTop = parseFloat(shiftTop, 10);
+        shiftLeft = parseFloat(shiftLeft, 10);
+      } else {
+        shiftTop = shift.top;
+        shiftLeft = shift.left;
+      }
+
+      top += shiftTop;
+      left += shiftLeft;
+
+      return { top: top, left: left };
+    }
+  });
+  return Tether;
+});
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var g;
+
+// This works in non-strict mode
+g = (function () {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1, eval)("this");
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Tether"] = __webpack_require__(23);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(5);
+module.exports = __webpack_require__(6);
+
+
+/***/ })
+/******/ ]);
