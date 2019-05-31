@@ -1,8 +1,10 @@
-
+﻿classic/
 # perso
 webpack.config.js
 package.json
 package-lock.json
+*.wof
+
 _core /
 _biblioth�ques /
 _libraries/
